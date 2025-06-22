@@ -1,0 +1,193 @@
+{
+    "Login": {
+        "Login": "Login",
+        "Email": {
+            "Email": "Email",
+            "invalid": "invalid email"
+        },
+        "Password": {
+            "Password": "Password",
+            "invalid": "invalid password"
+        },
+        "login": "login",
+        "invalid": "invalid"
+    },
+    "header": {
+        "Projects": "Projects",
+        "Kanban": "View Kanban",
+        "Language": {
+            "Choose": "Choose Language",
+            "english": "English",
+            "french": "French",
+            "japanese": "Japanese",
+            "hindi": "Hindi",
+            "sanskrit": "Sanskrit"
+        },
+        "guest": "Guest",
+        "dropdown": {
+            "logout": "logout",
+            "profile": "profile"
+        }
+    },
+    "dashboard": {
+        "title": "Project Management Application"
+    },
+    "projects": {
+        "none": "No Projects",
+        "single": "1 Project",
+        "multiple": "{{count}} Projects",
+        "choose":"choose status",
+        "Status": {
+            "status": "Choose Status",
+            "open": "open",
+            "progress": "in progress",
+            "completed": "completed"
+        },
+        "table": {
+            "name": "Name",
+            "createdAt": "Created At",
+            "taskCount": "Task Count",
+            "status": "Status",
+            "action": "Actions"
+        },
+        "STATUS": {
+            "open": "Open",
+            "progress": "In Progress",
+            "completed": "Completed"
+        }
+    },
+    "modal": {
+    "confirm": {
+      "title": "{{title}}",
+      "message": "Do you really want to {{title}}?",
+      "cancel": "Cancel",
+      "ok": "Ok"
+    },
+    "addTask": {
+      "defaultTitle": "Add a New Task",
+      "form": {
+        "title": "Title",
+        "assignee": "Assignee",
+        "priority": "Priority",
+        "status": "Status",
+        "dueDate": "Due Date",
+        "dueDatePlaceholder": "yyyy-mm-dd",
+        "invalidDate": "Invalid due date"
+      },
+      "actions": {
+        "cancel": "Cancel",
+        "save": "Save",
+        "update": "Update"
+      }
+    }
+  },
+   "notFound": {
+    "title": "404",
+    "message": "Page not found",
+    "goToDashboard": "Go to Dashboard",
+    "goToLogin": "Go to Login"
+  },
+  "projectForm": {
+    "name": {
+      "label": "Name",
+      "placeholder": "Name:",
+      "invalid": "Invalid name"
+    },
+    "description": {
+      "label": "Description",
+      "placeholder": "Description:"
+    },
+    "startDate": {
+      "label": "Start Date",
+      "placeholder": "yyyy-mm-dd",
+      "invalid": "Invalid start date"
+    },
+    "endDate": {
+      "label": "End Date",
+      "placeholder": "yyyy-mm-dd",
+      "invalid": "Invalid end date"
+    },
+    "actions": {
+      "save": "Save",
+      "update": "Update",
+      "tasks": "Task"
+    }
+  },
+  "tasks": {
+    "header": {
+      "count": {
+        "none": "No Tasks",
+        "single": "1 Task",
+        "multiple": "{{count}} Tasks"
+      },
+      "filters": {
+        "status": "Choose Status",
+        "priority": "Choose Priority",
+        "all": "All"
+      },
+      "add": "Add Task"
+    },
+    "table": {
+      "index": "#",
+      "title": "Title",
+      "assignee": "Assignee",
+      "status": "Status",
+      "priority": "Priority",
+      "dueDate": "Due Date",
+      "actions": "Actions",
+      "anonymous": "anonymous",
+      "edit": "Edit",
+      "delete": "Delete"
+    }
+  },
+  "toasts": {
+    "loginSuccess": {
+      "header": "Login Successful",
+      "message": "Welcome {{user}}, ProjectManagement"
+    },
+    "wrongCredentials": {
+      "header": "Wrong Credentials",
+      "message": "Either email or password is incorrect"
+    },
+    "unknownError": {
+      "header": "Unknown Error",
+      "message": "An unknown error has occurred"
+    },
+    "networkError": {
+      "header": "Network Error",
+      "message": "Check your network or try again later"
+    },
+    "serverError": {
+      "header": "Server Error",
+      "message": "Try again later"
+    },
+    "notFoundError": {
+      "header": "Not Found Error",
+      "message": "Item does not exist"
+    },
+    "projectAdded": {
+      "header": "Project Added",
+      "message": "{{project}} has been added successfully"
+    },
+    "projectDeleted": {
+      "header": "Project Deleted",
+      "message": "{{project}} has been deleted successfully"
+    },
+    "projectUpdated": {
+      "header": "Project Updated",
+      "message": "{{project}} has been updated successfully"
+    },
+    "taskAdded": {
+      "header": "Task Added",
+      "message": "{{task}} has been added successfully"
+    },
+    "taskDeleted": {
+      "header": "Task Deleted",
+      "message": "{{task}} has been deleted successfully"
+    },
+    "taskUpdated": {
+      "header": "Task Updated",
+      "message": "{{task}} has been updated successfully"
+    }
+  }
+}

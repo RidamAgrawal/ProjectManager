@@ -1,0 +1,93 @@
+:host{
+    height: 100%;
+    width: 100%;
+}
+#taskList{
+    border: 1px solid black;
+    margin: 0px;
+}
+td,td button{
+    font-family: 'Savate',monospace;
+}
+td button{
+    background-color: white;
+    border: 1px solid black;
+    margin: 2px;
+    padding: 2px 4px;
+    border-radius: 4px;
+    align-items: center;
+}
+td button:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.tasksHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-top: none;
+    padding: 0px 5px;
+}
+.tasksMenuRight{
+    display:flex;
+    gap: 10px;
+    align-items: center;
+}
+#taskList{
+    border: 2px solid black;
+}
+.filterOptions{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.filterOptions label,.addTaskBtn{
+    height: 20px;
+    border-radius: 4px;
+}
+.filterOptions label:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.addTaskBtn,label[for="tasksFilter"]{
+    display: flex;
+    align-items: center;
+}
+.addTaskBtn:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+:host ::ng-deep .dt-container .dt-layout-row {
+  margin: 0 !important;
+}
+:host ::ng-deep .dt-container {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+:host ::ng-deep .dt-layout-row:nth-child(2){
+    padding: 10px !important;
+}
+:host ::ng-deep .dt-container .dt-layout-row {
+  margin: 0 !important;
+}
+:host ::ng-deep .dt-container {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+:host ::ng-deep .dt-layout-row:nth-child(2){
+    padding: 10px !important;
+}
+mat-form-field{ 
+    padding: 0px !important;
+    margin: 0px !important;
+}
+mat-select{
+    padding: 0px !important;
+}
+mat-option{
+    background-color: white !important;
+    min-height: 0px !important;
+}
+#tasksStatusFilter,#tasksPriorityFilter{
+    padding-top: 10px !important;
+    padding-bottom: 0px !important;
+}

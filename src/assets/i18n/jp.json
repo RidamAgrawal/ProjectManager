@@ -1,0 +1,193 @@
+{
+    "Login": {
+        "Login": "ログイン",
+        "Email": {
+            "Email": "メールアドレス",
+            "invalid": "無効なメールアドレス"
+        },
+        "Password": {
+            "Password": "パスワード",
+            "invalid": "無効なパスワード"
+        },
+        "login": "ログインする",
+        "invalid": "無効"
+    },
+    "header": {
+    "Projects": "プロジェクト",
+    "Kanban": "カンバンを見る",
+    "Language": {
+      "Choose": "言語を選択",
+      "english": "英語",
+      "french": "フランス語",
+      "japanese": "日本語",
+      "hindi": "ヒンディー語",
+      "sanskrit": "サンスクリット語"
+    },
+    "guest": "ゲスト",
+    "dropdown": {
+      "logout": "ログアウト",
+      "profile": "プロフィール"
+    }
+  },
+  "dashboard": {
+    "title": "プロジェクト管理アプリケーション"
+  },
+  "projects": {
+    "none": "プロジェクトがありません",
+    "single": "1 件のプロジェクト",
+    "multiple": "{{count}} 件のプロジェクト",
+    "choose": "ステータスを選択",
+    "Status": {
+      "status": "ステータスを選択",
+      "open": "開始",
+      "progress": "進行中",
+      "completed": "完了"
+    },
+    "table": {
+      "name": "名前",
+      "createdAt": "作成日",
+      "taskCount": "タスク数",
+      "status": "ステータス",
+      "action": "操作"
+    },
+    "STATUS": {
+      "open": "開始",
+      "progress": "進行中",
+      "completed": "完了"
+    }
+  },
+  "modal": {
+    "confirm": {
+      "title": "{{title}}",
+      "message": "本当に{{title}}しますか？",
+      "cancel": "キャンセル",
+      "ok": "OK"
+    },
+    "addTask": {
+      "defaultTitle": "新しいタスクを追加",
+      "form": {
+        "title": "タイトル",
+        "assignee": "担当者",
+        "priority": "優先度",
+        "status": "ステータス",
+        "dueDate": "期限日",
+        "dueDatePlaceholder": "yyyy-mm-dd",
+        "invalidDate": "無効な期限日"
+      },
+      "actions": {
+        "cancel": "キャンセル",
+        "save": "保存",
+        "update": "更新"
+      }
+    }
+  },
+  "notFound": {
+    "title": "404",
+    "message": "ページが見つかりません",
+    "goToDashboard": "ダッシュボードへ",
+    "goToLogin": "ログインへ"
+  },
+  "projectForm": {
+    "name": {
+      "label": "名前",
+      "placeholder": "名前：",
+      "invalid": "無効な名前"
+    },
+    "description": {
+      "label": "説明",
+      "placeholder": "説明："
+    },
+    "startDate": {
+      "label": "開始日",
+      "placeholder": "yyyy-mm-dd",
+      "invalid": "無効な開始日"
+    },
+    "endDate": {
+      "label": "終了日",
+      "placeholder": "yyyy-mm-dd",
+      "invalid": "無効な終了日"
+    },
+    "actions": {
+      "save": "保存",
+      "update": "更新",
+      "tasks": "タスク"
+    }
+  },
+  "tasks": {
+    "header": {
+      "count": {
+        "none": "タスクなし",
+        "single": "1 件のタスク",
+        "multiple": "{{count}} 件のタスク"
+      },
+      "filters": {
+        "status": "ステータスを選択",
+        "priority": "優先度を選択",
+        "all": "すべて"
+      },
+      "add": "タスクを追加"
+    },
+    "table": {
+      "index": "#",
+      "title": "タイトル",
+      "assignee": "担当者",
+      "status": "ステータス",
+      "priority": "優先度",
+      "dueDate": "期限",
+      "actions": "操作",
+      "anonymous": "匿名",
+      "edit": "編集",
+      "delete": "削除"
+    }
+  },
+  "toasts": {
+    "loginSuccess": {
+      "header": "ログイン成功",
+      "message": "ようこそ {{user}} さん、ProjectManagementへ"
+    },
+    "wrongCredentials": {
+      "header": "認証情報が間違っています",
+      "message": "メールアドレスまたはパスワードが正しくありません"
+    },
+    "unknownError": {
+      "header": "不明なエラー",
+      "message": "不明なエラーが発生しました"
+    },
+    "networkError": {
+      "header": "ネットワークエラー",
+      "message": "ネットワークを確認するか、後で再試行してください"
+    },
+    "serverError": {
+      "header": "サーバーエラー",
+      "message": "後でもう一度お試しください"
+    },
+    "notFoundError": {
+      "header": "見つかりません",
+      "message": "項目が存在しません"
+    },
+    "projectAdded": {
+      "header": "プロジェクト追加",
+      "message": "{{project}} が正常に追加されました"
+    },
+    "projectDeleted": {
+      "header": "プロジェクト削除",
+      "message": "{{project}} が正常に削除されました"
+    },
+    "projectUpdated": {
+      "header": "プロジェクト更新",
+      "message": "{{project}} が正常に更新されました"
+    },
+    "taskAdded": {
+      "header": "タスク追加",
+      "message": "{{task}} が正常に追加されました"
+    },
+    "taskDeleted": {
+      "header": "タスク削除",
+      "message": "{{task}} が正常に削除されました"
+    },
+    "taskUpdated": {
+      "header": "タスク更新",
+      "message": "{{task}} が正常に更新されました"
+    }
+  }
+}

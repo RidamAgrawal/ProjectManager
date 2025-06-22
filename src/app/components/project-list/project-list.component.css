@@ -1,0 +1,75 @@
+:host{
+    height: 100%;
+    width: 100%;
+}
+#projectList{
+    border: 1px solid black;
+    margin: 0px;
+}
+td,td button{
+    font-family: 'Savate',monospace;
+}
+td button{
+    background-color: white;
+    border: 1px solid black;
+    margin: 2px;
+    padding: 2px 4px;
+    border-radius: 4px;
+    align-items: center;
+}
+td button:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.projectsHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-top: none;
+    padding-top: 10px;
+}
+.projectsMenuRight{
+    display:flex;
+    gap: 20px;
+    align-items: center;
+    margin-right: 10px;
+}
+#projectList{
+    border: 2px solid black;
+}
+.filterOptions{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.filterOptions label,.addProjectBtn{
+    height: 20px;
+    border-radius: 4px;
+}
+.filterOptions label:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.addProjectBtn:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+:host ::ng-deep .dt-container .dt-layout-row {
+  margin: 0 !important;
+}
+:host ::ng-deep .dt-container {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+:host ::ng-deep .dt-layout-row:nth-child(2){
+    padding: 10px !important;
+}
+mat-form-field{ 
+    padding: 0px !important;
+    margin: 0px !important;
+}
+mat-select{
+    padding: 0px !important;
+}
+mat-option{
+    background-color: white !important;
+    min-height: 0px !important;
+}

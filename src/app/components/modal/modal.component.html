@@ -1,0 +1,77 @@
+<ng-template #modal let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">{{"modal.confirm.title"|translate:{title} }}</h4>
+        <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss()"></button>
+    </div>
+    <div class="modal-body">
+        <p>{{"modal.confirm.message"|translate:{title} }}</p>
+    </div>
+    <div class="modal-footer">
+        <button type="button" ngbAutofocus class="btn btn-outline-secondary"
+            (click)="modal.dismiss('cancel')">{{"modal.confirm.cancel"|translate}}</button>
+        <button type="button" class="btn btn-danger" (click)="modal.close('Ok')">{{"modal.confirm.ok"|translate}}</button>
+    </div>
+</ng-template>
+
+<ng-template #addTaskModal let-addTaskModal>
+    <div class="modal-header">
+        <h4 class="modal-title">{{title||"modal.addTask.defaultTitle"|translate}}</h4>
+        <button type="button" class="btn-close" aria-label="Close" (click)="addTaskModal.dismiss()"></button>
+    </div>
+    <div class="modal-body">
+        <form class="d-flex justify-content-center" [formGroup]="taskForm">
+            <div class="col-md-6 d-flex flex-column align-items-center">
+                <div class="row col-md-8 m-4">
+                    <label for="title">{{"modal.addTask.form.title"|translate}}:</label>
+                    <input type="text" class="form-control col-md-12" id="title" placeholder="{{'modal.addTask.form.title'|translate}}:" formControlName="title">
+                </div>
+                <div class="row col-md-8 m-4">
+                    <label for="assignee">{{"modal.addTask.form.assignee"|translate}}:</label>
+                    <select id="assignee" class="form-control col-md-12" formControlName="assignee">
+                        @for(user of users$|async;track $index){
+                            <option [value]="user._id">{{user.name}}</option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex flex-column align-items-center">
+                <div class="row col-md-8 m-4">
+                    <label for="priority">{{"modal.addTask.form.priority"|translate}}:</label>
+                    <select id="priority" class="form-control col-md-12" formControlName="priority">
+                        @for(priorityEntry of priorityEntries;track $index){
+                            <option [value]="priorityEntry[0]">{{priorityEntry[1]}}</option>
+                        }
+                    </select>
+                </div>
+                <div class="row col-md-8 m-4">
+                    <label for="status">{{"modal.addTask.form.status"|translate}}:</label>
+                    <select id="status" class="form-control col-md-12" formControlName="status">
+                        @for(statusEntry of taskStatusEntries;track $index){
+                            <option [value]="statusEntry[0]">{{statusEntry[1]}}</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group col-md-8 m-4">
+                <label class="form-label m-0 mx-2" for="endDate">{{"modal.addTask.form.dueDate"|translate}}:</label>
+                <div class="input-group">
+                    <input type="text" id="endDate" class="form-control" placeholder="{{'modal.addTask.form.dueDatePlaceholder'|translate}}" ngbDatepicker #d="ngbDatepicker" formControlName="dueDate" [minDate]="todayNgbDate" required>
+                    <button type="button" class="btn btn-outline-secondary rounded-end bi bi-calender3" (click)="d.toggle()">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Z"/></svg>
+                    </button>
+                    <div class="invalid-feedback">{{"modal.addTask.form.invalidDate"|translate}}</div>
+                </div>
+            </div>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" ngbAutofocus class="btn btn-outline-secondary"
+            (click)="addTaskModal.dismiss('cancel')">{{"modal.addTask.actions.cancel"|translate}}</button>
+            @if(title){
+                <button type="button" class="btn btn-danger" [disabled]="!isValid()" (click)="addTaskModal.close('Ok')">{{"modal.addTask.actions.update"|translate}}</button>
+            }
+            @else{
+                <button type="button" class="btn btn-danger" [disabled]="!taskForm.valid" (click)="addTaskModal.close('Ok')">{{"modal.addTask.actions.save"|translate}}</button>
+            }
+    </div>
+</ng-template>

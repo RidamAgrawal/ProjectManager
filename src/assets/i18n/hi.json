@@ -1,0 +1,193 @@
+{
+  "Login": {
+    "Login": "लॉगिन",
+    "Email": {
+      "Email": "ईमेल",
+      "invalid": "अमान्य ईमेल"
+    },
+    "Password": {
+      "Password": "पासवर्ड",
+      "invalid": "अमान्य पासवर्ड"
+    },
+    "login": "लॉगिन करें",
+    "invalid": "अमान्य"
+  },
+  "header": {
+    "Projects": "परियोजनाएँ",
+    "Kanban": "कानबन देखें",
+    "Language": {
+      "Choose": "भाषा चुनें",
+      "english": "अंग्रेज़ी",
+      "french": "फ्रेंच",
+      "japanese": "जापानी",
+      "hindi": "हिंदी",
+      "sanskrit": "संस्कृत"
+    },
+    "guest": "अतिथि",
+    "dropdown": {
+      "logout": "लॉगआउट",
+      "profile": "प्रोफ़ाइल"
+    }
+  },
+  "dashboard": {
+    "title": "परियोजना प्रबंधन अनुप्रयोग"
+  },
+  "projects": {
+    "none": "कोई परियोजना नहीं",
+    "single": "1 परियोजना",
+    "multiple": "{{count}} परियोजनाएँ",
+    "choose": "स्थिति चुनें",
+    "Status": {
+      "status": "स्थिति चुनें",
+      "open": "खुला",
+      "progress": "प्रगति पर",
+      "completed": "पूरा हुआ"
+    },
+    "table": {
+      "name": "नाम",
+      "createdAt": "बनाई गई तिथि",
+      "taskCount": "कार्य की संख्या",
+      "status": "स्थिति",
+      "action": "क्रियाएँ"
+    },
+    "STATUS": {
+      "open": "खुला",
+      "progress": "प्रगति पर",
+      "completed": "पूरा हुआ"
+    }
+  },
+  "modal": {
+    "confirm": {
+      "title": "{{title}}",
+      "message": "क्या आप वाकई {{title}} करना चाहते हैं?",
+      "cancel": "रद्द करें",
+      "ok": "ठीक है"
+    },
+    "addTask": {
+      "defaultTitle": "नया कार्य जोड़ें",
+      "form": {
+        "title": "शीर्षक",
+        "assignee": "सौंपा गया",
+        "priority": "प्राथमिकता",
+        "status": "स्थिति",
+        "dueDate": "नियत तिथि",
+        "dueDatePlaceholder": "yyyy-mm-dd",
+        "invalidDate": "अमान्य नियत तिथि"
+      },
+      "actions": {
+        "cancel": "रद्द करें",
+        "save": "सहेजें",
+        "update": "अपडेट करें"
+      }
+    }
+  },
+  "notFound": {
+    "title": "404",
+    "message": "पृष्ठ नहीं मिला",
+    "goToDashboard": "डैशबोर्ड पर जाएँ",
+    "goToLogin": "लॉगिन पर जाएँ"
+  },
+  "projectForm": {
+    "name": {
+      "label": "नाम",
+      "placeholder": "नाम:",
+      "invalid": "अमान्य नाम"
+    },
+    "description": {
+      "label": "विवरण",
+      "placeholder": "विवरण:"
+    },
+    "startDate": {
+      "label": "प्रारंभ तिथि",
+      "placeholder": "yyyy-mm-dd",
+      "invalid": "अमान्य प्रारंभ तिथि"
+    },
+    "endDate": {
+      "label": "समाप्ति तिथि",
+      "placeholder": "yyyy-mm-dd",
+      "invalid": "अमान्य समाप्ति तिथि"
+    },
+    "actions": {
+      "save": "सहेजें",
+      "update": "अपडेट करें",
+      "tasks": "कार्य"
+    }
+  },
+  "tasks": {
+    "header": {
+      "count": {
+        "none": "कोई कार्य नहीं",
+        "single": "1 कार्य",
+        "multiple": "{{count}} कार्य"
+      },
+      "filters": {
+        "status": "स्थिति चुनें",
+        "priority": "प्राथमिकता चुनें",
+        "all": "सभी"
+      },
+      "add": "कार्य जोड़ें"
+    },
+    "table": {
+      "index": "#",
+      "title": "शीर्षक",
+      "assignee": "जिम्मेदार व्यक्ति",
+      "status": "स्थिति",
+      "priority": "प्राथमिकता",
+      "dueDate": "नियत तिथि",
+      "actions": "क्रियाएं",
+      "anonymous": "अज्ञात",
+      "edit": "संपादित करें",
+      "delete": "हटाएं"
+    }
+  },
+  "toasts": {
+    "loginSuccess": {
+      "header": "सफलतापूर्वक लॉगिन",
+      "message": "स्वागत है {{user}}, ProjectManagement में"
+    },
+    "wrongCredentials": {
+      "header": "गलत प्रमाण-पत्र",
+      "message": "ईमेल या पासवर्ड गलत है"
+    },
+    "unknownError": {
+      "header": "अज्ञात त्रुटि",
+      "message": "कोई अज्ञात त्रुटि हुई है"
+    },
+    "networkError": {
+      "header": "नेटवर्क त्रुटि",
+      "message": "अपना नेटवर्क जांचें या बाद में पुनः प्रयास करें"
+    },
+    "serverError": {
+      "header": "सर्वर त्रुटि",
+      "message": "कृपया बाद में पुनः प्रयास करें"
+    },
+    "notFoundError": {
+      "header": "नहीं मिला",
+      "message": "आइटम मौजूद नहीं है"
+    },
+    "projectAdded": {
+      "header": "प्रोजेक्ट जोड़ा गया",
+      "message": "{{project}} सफलतापूर्वक जोड़ा गया है"
+    },
+    "projectDeleted": {
+      "header": "प्रोजेक्ट हटाया गया",
+      "message": "{{project}} सफलतापूर्वक हटाया गया है"
+    },
+    "projectUpdated": {
+      "header": "प्रोजेक्ट अपडेट किया गया",
+      "message": "{{project}} सफलतापूर्वक अपडेट किया गया है"
+    },
+    "taskAdded": {
+      "header": "कार्य जोड़ा गया",
+      "message": "{{task}} सफलतापूर्वक जोड़ा गया है"
+    },
+    "taskDeleted": {
+      "header": "कार्य हटाया गया",
+      "message": "{{task}} सफलतापूर्वक हटाया गया है"
+    },
+    "taskUpdated": {
+      "header": "कार्य अपडेट किया गया",
+      "message": "{{task}} सफलतापूर्वक अपडेट किया गया है"
+    }
+  }
+}

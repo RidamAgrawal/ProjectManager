@@ -1,0 +1,31 @@
+<form class="d-flex flex-column mt-5 mx-auto col-md-9 align-items-center border rounded" [formGroup]="userForm" (ngSubmit)="handleSubmit()">
+    <h2 class="m-3">{{'Login.Login'|translate}}</h2>
+    <!-- @if(title==='register'){
+        <div class="inputRow">
+            <label for="name">Name:</label>
+            <input type="text" id="name" formControlName="name" required>
+        </div>
+    } -->
+    <div class="input-group w-25 mb-5">
+        <div class="form-floating">
+            <input type="email" id="email" class="form-control px-3 pt-4" [ngClass]="(!email.valid&&(email.touched||email.dirty))?'is-invalid':''" formControlName="email" placeholder="Email:" required>
+            <label for="email">{{'Login.Email.Email'|translate}}:</label>
+            @if(email.dirty&&email.touched){
+                <div class="invalid-feedback">{{'Login.Email.invalid'|translate}}</div>
+            }
+        </div>
+    </div>
+    <div class="input-group w-25 mb-5">
+        <div class="form-floating">
+            <input type="password" id="password" class="form-control px-3 pt-4" [ngClass]="(!password.valid&&(password.touched||password.dirty))?'is-invalid':''" formControlName="password" placeholder="Password:" required>
+            <label for="password">{{'Login.Password.Password'|translate}}:</label>
+            @if(password.touched&&password.dirty){
+                <div class="invalid-feedback">{{'Login.Password.invalid'}}</div>
+            }
+        </div>
+    </div>
+    <input type="submit" class="btn btn-outline-secondary m-3 px-5 py-2" [disabled]="!userForm.valid" value="{{'Login.login'|translate}}">
+    <!-- <div class="inputRow ">
+        <a [routerLink]="['..',(title==='register')?'login':'register']" [innerText]="(title==='register')?'login account':'create account'"></a>
+    </div> -->
+</form>

@@ -1,0 +1,76 @@
+<form class="row row-sm border p-5 rounded-4" [formGroup]="projectForm" (ngSubmit)="handleSubmit()">
+    <div class="d-flex">
+        <div class="d-flex flex-column align-items-center col-md-9">
+            <div class="form-group col-md-8 mb-4">
+                <div class="col-md-12 form-floating mb-3">
+                    <input type="text"
+                        [ngClass]="[(!name.valid&&(name.touched||name.dirty))?'is-invalid':'','form-control']"
+                        formControlName="name" id="name" placeholder="{{'projectForm.name.label'|translate}}:" required>
+                    <label for="name">{{'projectForm.name.label'|translate}}:</label>
+                    <div class="invalid-feedback">{{'projectForm.name.invalid'|translate}}</div>
+                </div>
+            </div>
+            <div class="form-group col-md-8 mb-5">
+                <div class="col-md-12 form-floating">
+                    <textarea
+                        [ngClass]="[(!description.valid&&(description.touched||description.dirty))?'is-invalid':'','form-control']"
+                        id="description" rows="5" formControlName="description" placeholder="{{'projectForm.description.label'|translate}}:"></textarea>
+                    <label for="description">{{'projectForm.description.label'|translate}}:</label>
+                </div>
+            </div>
+        </div>
+        <!-- <hr> -->
+        <div class="col-md-2">
+            <div class="form-group col-md-12 mb-4">
+                <label class="form-label" for="endDate">{{'projectForm.startDate.label'|translate}}:</label>
+                <div class="input-group">
+                    <input type="text" id="startDate"
+                        [ngClass]="[(!startDate.valid&&(startDate.touched||startDate.dirty))?'is-invalid':'','form-control']"
+                        placeholder="{{'projectForm.startDate.placeholder'|translate}}" ngbDatepicker #d1="ngbDatepicker" [minDate]="todayNgbDate"
+                        formControlName="startDate" required>
+                    <button type="button" class="btn btn-outline-secondary bi bi-calender3 rounded-end"
+                        (click)="d1.toggle()">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Z"/></svg>
+                    </button>
+                    <div class="invalid-feedback">{{'projectForm.startDate.invalid'|translate}}</div>
+                </div>
+            </div>
+            <div class="form-group col-md-12 mb-5">
+                <label class="form-label" for="endDate">{{'projectForm.endDate.label'|translate}}:</label>
+                <div class="input-group">
+                    <input type="text" id="endDate"
+                        [ngClass]="[(!endDate.valid&&(endDate.touched||endDate.dirty))?'is-invalid':'','form-control']"
+                            placeholder="{{'projectForm.endDate.placeholder'|translate}}" ngbDatepicker #d2="ngbDatepicker" [minDate]="todayNgbDate"
+                        formControlName="endDate" required>
+                    <button type="button" class="btn btn-outline-secondary bi bi-calender3 rounded-end"
+                        (click)="d2.toggle()">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Z"/></svg>
+                    </button>
+                    <!-- <div class="invalid-feedback">invalid end date</div> -->
+                    <!-- @if(projectForm.hasError('endBeforeStart')&&endDate.valid){ -->
+                        <div class="invalid-feedback">{{'projectForm.endDate.invalid'|translate}}</div>
+                    <!-- } -->
+                </div>
+            </div>
+            <!-- {{projectForm.hasError('endBeforeStart')}} -->
+        </div>
+    </div>
+    <div class="row">
+        @if(projectId){
+        <div class="d-flex justify-content-center col">
+            <a class="btn btn-outline-secondary" routerLink="tasks">{{'projectForm.actions.tasks'|translate}}</a>
+        </div>
+        }
+        @if(projectId){
+        <div class="d-flex justify-content-center col">
+            <button type="submit" class="btn btn-outline-secondary" [disabled]="!isValid()">{{'projectForm.actions.update'|translate}}</button>
+        </div>
+        }
+        @else {
+        <div class="d-flex justify-content-center col">
+            <button type="submit" class="btn btn-outline-secondary"
+                [disabled]="projectForm.valid&&!projectForm.dirty&&!projectForm.touched">{{'projectForm.actions.save'|translate}}</button>
+        </div>
+        }
+    </div>
+</form>

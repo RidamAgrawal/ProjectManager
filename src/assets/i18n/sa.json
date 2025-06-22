@@ -1,0 +1,193 @@
+{
+  "Login": {
+    "Login": "प्रवेशः",
+    "Email": {
+      "Email": "ईमेल्",
+      "invalid": "अमान्य ईमेल्"
+    },
+    "Password": {
+      "Password": "गुप्तशब्दः",
+      "invalid": "अमान्यः गुप्तशब्दः"
+    },
+    "login": "प्रवेशं कुर्वन्तु",
+    "invalid": "अमान्यः"
+  },
+  "header": {
+    "Projects": "परियोजनाः",
+    "Kanban": "कान्बन् दृश्यः",
+    "Language": {
+      "Choose": "भाषां चिनुत",
+      "english": "आङ्ग्लभाषा",
+      "french": "फ्रांस्भाषा",
+      "japanese": "जापानीया भाषा",
+      "hindi": "हिन्दी",
+      "sanskrit": "संस्कृतम्"
+    },
+    "guest": "अतिथिः",
+    "dropdown": {
+      "logout": "निर्गमः",
+      "profile": "व्यक्तित्वम्"
+    }
+  },
+  "dashboard": {
+    "title": "परियोजनाप्रबन्धन अनुप्रयोगः"
+  },
+  "projects": {
+    "none": "कोऽपि परियोजनाः नास्ति",
+    "single": "एकः परियोजनः",
+    "multiple": "{{count}} परियोजनाः",
+    "choose": "स्थितिं चिनुत",
+    "Status": {
+      "status": "स्थितिं चिनुत",
+      "open": "प्रारब्धः",
+      "progress": "प्रगतिः",
+      "completed": "समाप्तः"
+    },
+    "table": {
+      "name": "नाम",
+      "createdAt": "निर्माणतिथिः",
+      "taskCount": "कार्यसंख्या",
+      "status": "स्थिति",
+      "action": "क्रियाः"
+    },
+    "STATUS": {
+      "open": "प्रारब्धः",
+      "progress": "प्रगतिः",
+      "completed": "समाप्तः"
+    }
+  },
+  "modal": {
+    "confirm": {
+      "title": "{{title}}",
+      "message": "किं त्वं वास्तवमेव {{title}} कर्तुमिच्छसि?",
+      "cancel": "निरस्तम्",
+      "ok": "सङ्गच्छतु"
+    },
+    "addTask": {
+      "defaultTitle": "नवकार्यं योजयतु",
+      "form": {
+        "title": "शीर्षकम्",
+        "assignee": "नियोजितः",
+        "priority": "प्राथम्यं",
+        "status": "स्थिति",
+        "dueDate": "समाप्तेः दिनाङ्कः",
+        "dueDatePlaceholder": "yyyy-mm-dd",
+        "invalidDate": "अमान्य समाप्तदिनाङ्कः"
+      },
+      "actions": {
+        "cancel": "निरस्तम्",
+        "save": "सङ्ग्रहीतुं",
+        "update": "अद्यतनं कुरुत"
+      }
+    }
+  },
+  "notFound": {
+    "title": "४०४",
+    "message": "पृष्ठं न लब्धम्",
+    "goToDashboard": "डैशबोर्ड् गच्छतु",
+    "goToLogin": "प्रवेशाय गच्छतु"
+  },
+  "projectForm": {
+    "name": {
+      "label": "नाम",
+      "placeholder": "नामः",
+      "invalid": "अमान्यं नाम"
+    },
+    "description": {
+      "label": "वर्णनम्",
+      "placeholder": "वर्णनम्:"
+    },
+    "startDate": {
+      "label": "प्रारम्भतिथि",
+      "placeholder": "yyyy-mm-dd",
+      "invalid": "अमान्या प्रारम्भतिथि"
+    },
+    "endDate": {
+      "label": "समाप्त्याः तिथि",
+      "placeholder": "yyyy-mm-dd",
+      "invalid": "अमान्या समाप्तितिथि"
+    },
+    "actions": {
+      "save": "सङ्ग्रहीतुं",
+      "update": "अद्यतनं कुरुत",
+      "tasks": "कार्याणि"
+    }
+  },
+  "tasks": {
+    "header": {
+      "count": {
+        "none": "कार्याणि न सन्ति",
+        "single": "एकं कार्यम्",
+        "multiple": "{{count}} कार्याणि"
+      },
+      "filters": {
+        "status": "स्थितिं चुनुत",
+        "priority": "प्राधान्यं चुनुत",
+        "all": "सर्वाणि"
+      },
+      "add": "नूतनं कार्यं योजयत"
+    },
+    "table": {
+      "index": "#",
+      "title": "शीर्षकः",
+      "assignee": "कर्त्ता",
+      "status": "स्थिति",
+      "priority": "प्राधान्यम्",
+      "dueDate": "नियततिथिः",
+      "actions": "कर्माणि",
+      "anonymous": "अनामिकः",
+      "edit": "सम्पादयतु",
+      "delete": "अपाकुरुत"
+    }
+  },
+  "toasts": {
+    "loginSuccess": {
+      "header": "प्रवेशः सफलः",
+      "message": "स्वागतं {{user}}। ProjectManagement इत्यत्र"
+    },
+    "wrongCredentials": {
+      "header": "दुर्लक्षितं प्रवेशसूचनम्",
+      "message": "ईमेल वा संकेतशब्दः सम्यक् नास्ति"
+    },
+    "unknownError": {
+      "header": "अज्ञातदोषः",
+      "message": "अज्ञातं किञ्चिद् दोषः जातः"
+    },
+    "networkError": {
+      "header": "जालदोषः",
+      "message": "कृपया जालसञ्ज्ञां परीक्षत वा पुनः प्रयत्नं कुर्वन्तु"
+    },
+    "serverError": {
+      "header": "सेवारदोषः",
+      "message": "कृपया पश्चात् पुनः प्रयत्नं कुर्वन्तु"
+    },
+    "notFoundError": {
+      "header": "न लब्धम्",
+      "message": "वस्तु अस्ति न"
+    },
+    "projectAdded": {
+      "header": "परियोजना समाविष्टा",
+      "message": "{{project}} सफलतया समाविष्टा"
+    },
+    "projectDeleted": {
+      "header": "परियोजना अपाकृता",
+      "message": "{{project}} सफलतया अपाकृता"
+    },
+    "projectUpdated": {
+      "header": "परियोजना अद्यतनीकृता",
+      "message": "{{project}} सफलतया अद्यतनीकृता"
+    },
+    "taskAdded": {
+      "header": "कार्यं समाविष्टम्",
+      "message": "{{task}} सफलतया समाविष्टम्"
+    },
+    "taskDeleted": {
+      "header": "कार्यं अपाकृतम्",
+      "message": "{{task}} सफलतया अपाकृतम्"
+    },
+    "taskUpdated": {
+      "header": "कार्यं अद्यतनीकृतम्",
+      "message": "{{task}} सफलतया अद्यतनीकृतम्"
+    }
+  }
+}

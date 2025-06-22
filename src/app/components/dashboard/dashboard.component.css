@@ -1,0 +1,10 @@
+main{
+    height: 70%;
+    overflow-y: scroll;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    scrollbar-color: #666 transparent;
+    text-align: center;
+    text-justify: distribute;
+}

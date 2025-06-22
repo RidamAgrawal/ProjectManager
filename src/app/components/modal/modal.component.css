@@ -1,0 +1,8 @@
+
+.input-group button svg{
+    fill: grey;
+    transition: 0.2s;
+}
+.input-group button:hover svg{
+    fill:white;
+}

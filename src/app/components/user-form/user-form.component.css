@@ -1,0 +1,26 @@
+/* form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 20px;
+    height: 70%;
+} */
+/* form .inputRow{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form input{
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+form input:focus{
+    outline: none;
+}
+form input[type="submit"]{
+    width: fit-content;
+} */

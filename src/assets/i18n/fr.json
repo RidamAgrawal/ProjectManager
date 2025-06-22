@@ -1,0 +1,193 @@
+{
+  "Login": {
+    "Login": "Connexion",
+    "Email": {
+      "Email": "E-mail",
+      "invalid": "e-mail invalide"
+    },
+    "Password": {
+      "Password": "Mot de passe",
+      "invalid": "mot de passe invalide"
+    },
+    "login": "se connecter",
+    "invalid": "invalide"
+  },
+  "header": {
+    "Projects": "Projets",
+    "Kanban": "Voir le Kanban",
+    "Language": {
+      "Choose": "Choisir la langue",
+      "english": "Anglais",
+      "french": "Français",
+      "japanese": "Japonais",
+      "hindi": "Hindi",
+      "sanskrit": "Sanskrit"
+    },
+    "guest": "Invité",
+    "dropdown": {
+      "logout": "Se déconnecter",
+      "profile": "Profil"
+    }
+  },
+  "dashboard": {
+    "title": "Application de gestion de projet"
+  },
+  "projects": {
+    "none": "Aucun projet",
+    "single": "1 projet",
+    "multiple": "{{count}} projets",
+    "choose": "choisir le statut",
+    "Status": {
+      "status": "Choisir le statut",
+      "open": "ouvert",
+      "progress": "en cours",
+      "completed": "terminé"
+    },
+    "table": {
+      "name": "Nom",
+      "createdAt": "Créé le",
+      "taskCount": "Nombre de tâches",
+      "status": "Statut",
+      "action": "Actions"
+    },
+    "STATUS": {
+      "open": "Ouvert",
+      "progress": "En cours",
+      "completed": "Terminé"
+    }
+  },
+  "modal": {
+    "confirm": {
+      "title": "{{title}}",
+      "message": "Voulez-vous vraiment {{title}} ?",
+      "cancel": "Annuler",
+      "ok": "OK"
+    },
+    "addTask": {
+      "defaultTitle": "Ajouter une nouvelle tâche",
+      "form": {
+        "title": "Titre",
+        "assignee": "Attribué à",
+        "priority": "Priorité",
+        "status": "Statut",
+        "dueDate": "Date d'échéance",
+        "dueDatePlaceholder": "aaaa-mm-jj",
+        "invalidDate": "Date d'échéance invalide"
+      },
+      "actions": {
+        "cancel": "Annuler",
+        "save": "Enregistrer",
+        "update": "Mettre à jour"
+      }
+    }
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Page non trouvée",
+    "goToDashboard": "Aller au tableau de bord",
+    "goToLogin": "Aller à la connexion"
+  },
+  "projectForm": {
+    "name": {
+      "label": "Nom",
+      "placeholder": "Nom :",
+      "invalid": "Nom invalide"
+    },
+    "description": {
+      "label": "Description",
+      "placeholder": "Description :"
+    },
+    "startDate": {
+      "label": "Date de début",
+      "placeholder": "aaaa-mm-jj",
+      "invalid": "Date de début invalide"
+    },
+    "endDate": {
+      "label": "Date de fin",
+      "placeholder": "aaaa-mm-jj",
+      "invalid": "Date de fin invalide"
+    },
+    "actions": {
+      "save": "Enregistrer",
+      "update": "Mettre à jour",
+      "tasks": "Tâche"
+    }
+  },
+  "tasks": {
+    "header": {
+      "count": {
+        "none": "Aucune tâche",
+        "single": "1 tâche",
+        "multiple": "{{count}} tâches"
+      },
+      "filters": {
+        "status": "Choisir le statut",
+        "priority": "Choisir la priorité",
+        "all": "Toutes"
+      },
+      "add": "Ajouter une tâche"
+    },
+    "table": {
+      "index": "#",
+      "title": "Titre",
+      "assignee": "Attribué à",
+      "status": "Statut",
+      "priority": "Priorité",
+      "dueDate": "Date limite",
+      "actions": "Actions",
+      "anonymous": "anonyme",
+      "edit": "Modifier",
+      "delete": "Supprimer"
+    }
+  },
+  "toasts": {
+    "loginSuccess": {
+      "header": "Connexion réussie",
+      "message": "Bienvenue {{user}}, ProjectManagement"
+    },
+    "wrongCredentials": {
+      "header": "Identifiants incorrects",
+      "message": "L'e-mail ou le mot de passe est incorrect"
+    },
+    "unknownError": {
+      "header": "Erreur inconnue",
+      "message": "Une erreur inconnue s'est produite"
+    },
+    "networkError": {
+      "header": "Erreur réseau",
+      "message": "Vérifiez votre connexion réseau ou réessayez plus tard"
+    },
+    "serverError": {
+      "header": "Erreur du serveur",
+      "message": "Veuillez réessayer plus tard"
+    },
+    "notFoundError": {
+      "header": "Erreur : Introuvable",
+      "message": "L'élément n'existe pas"
+    },
+    "projectAdded": {
+      "header": "Projet ajouté",
+      "message": "{{project}} a été ajouté avec succès"
+    },
+    "projectDeleted": {
+      "header": "Projet supprimé",
+      "message": "{{project}} a été supprimé avec succès"
+    },
+    "projectUpdated": {
+      "header": "Projet mis à jour",
+      "message": "{{project}} a été mis à jour avec succès"
+    },
+    "taskAdded": {
+      "header": "Tâche ajoutée",
+      "message": "{{task}} a été ajoutée avec succès"
+    },
+    "taskDeleted": {
+      "header": "Tâche supprimée",
+      "message": "{{task}} a été supprimée avec succès"
+    },
+    "taskUpdated": {
+      "header": "Tâche mise à jour",
+      "message": "{{task}} a été mise à jour avec succès"
+    }
+  }
+}
