@@ -13,7 +13,7 @@ dbConnect();
 
 const allowedOrigins = [
   'http://localhost:4200',                     // for local dev
-  'https://project-manager-beta-five.vercel.app/',         // your Vercel domain
+  'https://project-manager-beta-five.vercel.app',         // your Vercel domain
 ];
 
 app.use(cors({
