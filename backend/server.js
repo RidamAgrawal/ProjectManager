@@ -9,10 +9,25 @@ require('dotenv').config();
 const app = express();
 
 dbConnect();
+
+
+const allowedOrigins = [
+  'http://localhost:4200',                     // for local dev
+  'https://project-manager-beta-five.vercel.app/',         // your Vercel domain
+];
+
 app.use(cors({
-    origin: ['http://localhost:4200','https://project-manager-q2zhwffel-crayon-21s-projects.vercel.app'],
-    credentials:true
-}))
+  origin: function (origin, callback) {
+    // allow requests with no origin (like mobile apps or curl)
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    } else {
+      return callback(new Error('CORS not allowed from this origin: ' + origin), false);
+    }
+  },
+  credentials: true // only if you're using cookies
+}));
 app.use(express.json());
 app.use(cookieParser());
 const userRoutes = require('./routes/user.routes');
