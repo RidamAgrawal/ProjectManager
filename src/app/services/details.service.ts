@@ -7,12 +7,13 @@ import { userLoginDetails, userRegisterDetails } from '../components/user-form/u
 import { NgbDate } from '@ng-bootstrap/ng-bootstrap';
 import { PRIORITY, Task, TaskCreate, TASKSTATUS, TaskUpdate } from '../interfaces/task';
 import { User } from '../interfaces/user';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DetailsService {
-  private hostUrl= 'http://localhost:3000';
+  private hostUrl= environment.HOST_URL;
   constructor(private http: HttpClient) { }
   public login(userDetails: userLoginDetails): Observable<any> {
     return this.http.post<any>(this.hostUrl+'/users/login', {

@@ -10,7 +10,8 @@ const app = express();
 
 dbConnect();
 app.use(cors({
-    origin: 'http://localhost:4200'
+    origin: ['http://localhost:4200','https://project-manager-q2zhwffel-crayon-21s-projects.vercel.app'],
+    credentials:true
 }))
 app.use(express.json());
 app.use(cookieParser());
